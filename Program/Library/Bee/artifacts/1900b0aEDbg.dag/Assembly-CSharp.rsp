@@ -356,6 +356,8 @@
 "Assets/Class3th (Animator)/Scripts/Mannequin.cs"
 "Assets/Class4th (Life Cycle)/Scripts/Life.cs"
 "Assets/Class4th (Life Cycle)/Scripts/Sphere.cs"
+"Assets/Class5th (Collider)/Scripts/Cube.cs"
+"Assets/Class5th (Collider)/Scripts/EffectZone.cs"
 -langversion:9.0
 
 /deterministic
