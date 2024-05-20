@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/Class6th (User Interface)/Scenes/Scene.unity
+- path: Assets/Class7th (Sound)/Scenes/Scene.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0
