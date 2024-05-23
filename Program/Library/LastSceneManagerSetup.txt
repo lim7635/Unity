@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/Class9th (Instantiate & Destory)/Scenes/Scene.unity
+- path: Assets/Class11th (RayCast)/Scenes/Scene.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0
