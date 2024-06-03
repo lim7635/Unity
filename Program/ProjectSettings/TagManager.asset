@@ -5,6 +5,8 @@ TagManager:
   serializedVersion: 2
   tags:
   - Other Cube
+  - Victory
+  - Defeat
   layers:
   - Default
   - TransparentFX

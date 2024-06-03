@@ -5,26 +5,35 @@ using UnityEngine.UI;
 
 public class UIManager : MonoBehaviour
 {
-    public Text[] resultText;
-    private string[] resultName = { "Victory", "Defeat" };
+    public Text[] UIText;
+    private string[] UIName = { "VICTORY", "DEFEAT" };
+    private GameObject text1 = null;
+    private GameObject text2 = null;
+    public GameManager gameManager;
 
     private void Awake()
     {
-        for (int i = 0; i < resultName.Length; i++)
+        for (int i = 0; i < UIName.Length; i++)
         {
-            resultText[i].text = resultName[i];
+            UIText[i].text = UIName[i];
         }
+
+        text1 = GameObject.Find("Victory Text");
+        text2 = GameObject.Find("Defeat Text");
+
+        text1.SetActive(false);
+        text2.SetActive(false);
     }
 
-    public void Result(string resultName)
+    void Update()
     {
-        if()
+        if(gameManager.Defeat == true)
         {
-
+            text2.SetActive(true);
         }
-        else if()
+        else if (gameManager.State == false)
         {
-
+            text1.SetActive(true);
         }
     }
 }

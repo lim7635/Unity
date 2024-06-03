@@ -42,18 +42,18 @@ public class Ball : MonoBehaviour
         rigidBody.AddForce(direction * speed * Time.fixedDeltaTime, ForceMode.Impulse);
     }
 
-    private void OnCollisionEnter(Collision collision)
-    {
-        Debug.Log("Collision Enter");
-    }
+    //private void OnCollisionEnter(Collision collision)
+    //{
+    //    Debug.Log("Collision Enter");
+    //}
 
-    private void OnCollisionStay(Collision collision)
-    {
-        Debug.Log("Collision Stay");
-    }
+    //private void OnCollisionStay(Collision collision)
+    //{
+    //    Debug.Log("Collision Stay");
+    //}
 
-    private void OnCollisionExit(Collision collision)
-    {
-        Debug.Log("Collision Exit");
-    }
+    //private void OnCollisionExit(Collision collision)
+    //{
+    //    Debug.Log("Collision Exit");
+    //}
 }
