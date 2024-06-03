@@ -17,7 +17,14 @@ public class Ball : MonoBehaviour
 
     void Update()
     {
-        if (gameManager.State == false) return;
+        if (gameManager.State == false)
+        {
+            rigidBody.freezeRotation = true;
+            rigidBody.useGravity = false;
+            rigidBody.Sleep();
+
+            return;
+        }
 
         direction.x = Input.GetAxisRaw("Horizontal");
         direction.z = Input.GetAxisRaw("Vertical");
@@ -38,6 +45,10 @@ public class Ball : MonoBehaviour
 
         // ForceMode.VelocityChange : RigidBody가 가진 질량을 무시하고 직접적으로 속도의 변화를 주는 모드다.
         // Acceleration은 시간이 흘러가면서 변화를 일으키는 데 비해 이 모드는 순간적으로 지정한 속도로 변화를 일으킴.
+        if(gameManager.State == false)
+        {
+            return;
+        }
 
         rigidBody.AddForce(direction * speed * Time.fixedDeltaTime, ForceMode.Impulse);
     }

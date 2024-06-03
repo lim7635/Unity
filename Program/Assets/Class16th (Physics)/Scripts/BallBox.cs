@@ -4,24 +4,29 @@ using UnityEngine;
 
 public class BallBox : MonoBehaviour
 {
-    public GameManager gameManager;
     private int count = 0;
+    public int endCount = 2;
+    public GameManager gameManager;
+    public UIManager uiManager;
 
     private void OnTriggerEnter(Collider other)
     {
-        if(other.CompareTag("Victory"))
+        Ball ball = other.GetComponent<Ball>();
+
+        if(ball != null)
+        {
+            uiManager.Result("D E F E A T");
+            gameManager.State = false;
+        }
+        else
         {
             count++;
-        }
-        else if (other.CompareTag("Defeat"))
-        {
-            gameManager.State = false;
-            gameManager.Defeat = true;
-        }
 
-        if(count >= 2)
-        {
-            gameManager.State = false;
+            if(count >= endCount)
+            {
+                uiManager.Result("V I C T O R Y");
+                gameManager.State = false;
+            }
         }
     }
 }

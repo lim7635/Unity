@@ -362,6 +362,7 @@
 "Assets/Class15th (Animation Event)/Scripts/Bot.cs"
 "Assets/Class15th (Animation Event)/Scripts/Capsule.cs"
 "Assets/Class16th (Physics)/Scripts/Ball.cs"
+"Assets/Class16th (Physics)/Scripts/BallBox.cs"
 "Assets/Class16th (Physics)/Scripts/GameManager.cs"
 "Assets/Class16th (Physics)/Scripts/UIManager.cs"
 "Assets/Class2th (Export Package)/Scripts/Data.cs"
