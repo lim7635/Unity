@@ -365,6 +365,7 @@
 "Assets/Class16th (Physics)/Scripts/BallBox.cs"
 "Assets/Class16th (Physics)/Scripts/GameManager.cs"
 "Assets/Class16th (Physics)/Scripts/UIManager.cs"
+"Assets/Class18th (Light)/Scripts/DataManager.cs"
 "Assets/Class2th (Export Package)/Scripts/Data.cs"
 "Assets/Class3th (Animator)/Scripts/Mannequin.cs"
 "Assets/Class4th (Life Cycle)/Scripts/Life.cs"
